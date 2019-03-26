@@ -28,7 +28,7 @@ CRGB leds[N_PIXELS];
 void setup() {
   Serial.begin(115200);
   Serial.println("Booting");
-  wifiManager.autoConnect("ESP32-OPC-SERVER", "AP-PASSWORD");
+  wifiManager.autoConnect("ESP32-OPC-SERVER", "password");
 
   LEDS.addLeds<WS2812,PIN,GRB>(leds,N_PIXELS);
   LEDS.setBrightness(84);
