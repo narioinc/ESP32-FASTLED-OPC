@@ -19,3 +19,14 @@ Just ensure that the OPC server IP in each of these examples is given the IP of 
 which is running the esp32_opc.ino code in it.
 
 Please feel free to open issues in case you need help with the code or you find bugs.  
+
+My project takes the code from the repo
+[https://github.com/ppelleti/esp-opc-server](https://github.com/ppelleti/esp-opc-server)
+and extends it to use FastLED engine instead of adafruit's neopixel library.
+
+# OPC implementation:
+[https://github.com/zestyping/openpixelcontrol](https://github.com/zestyping/openpixelcontrol)
+
+# Other Awesome Neopixel projects
+1) [https://github.com/longears/pixelslinger](https://github.com/longears/pixelslinger)
+2) [https://www.bhencke.com/pixelblaze](https://www.bhencke.com/pixelblaze)
