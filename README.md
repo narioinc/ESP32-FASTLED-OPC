@@ -1,5 +1,5 @@
 # ESP32-FASTLED-OPC
-An example of running an open pixel server on ESP32 with FastLed as the RGB strip engine.
+An example of running an Open Pixel Control server on ESP32 with FastLed as the RGB strip engine.
 
 # USE
 1) Get a esp32 board and connect to usb
