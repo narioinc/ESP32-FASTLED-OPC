@@ -14,8 +14,8 @@
 /* Edit this to configure the number of pixels you have, and your SSID and password */
 #define PIN 23       // pin that FastLEDs are connected to
 #define N_PIXELS 60  // number of FastLEDs on your strip
-#define WIFI_SSID   "XXXX"
-#define WIFI_PASSWD "XXXX"
+#define WIFI_SSID   "ESP32-OPC-SERVER"
+#define WIFI_PASSWD "password"
 
 WiFiManager wifiManager;
 
@@ -28,7 +28,7 @@ CRGB leds[N_PIXELS];
 void setup() {
   Serial.begin(115200);
   Serial.println("Booting");
-  wifiManager.autoConnect("ESP32-OPC-SERVER", "password");
+  wifiManager.autoConnect(WIFI_SSID, WIFI_PASSWD);
 
   LEDS.addLeds<WS2812,PIN,GRB>(leds,N_PIXELS);
   LEDS.setBrightness(84);
