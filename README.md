@@ -13,7 +13,7 @@ Connect any supported RGB hardware to the esp32 and ensure you edit the line
 To the pin of your choice. This pin is the data-in pin of the RGB peripheral
 
 # Running the samples
-Samples have been provided for Python/Nodejs/Processing
+Sample clients have been provided for Python/Nodejs/Processing
 
 Just ensure that the OPC server IP in each of these examples is given the IP of your esp32_opc
 which is running the esp32_opc.ino code in it.
