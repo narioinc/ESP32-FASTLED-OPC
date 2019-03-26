@@ -30,3 +30,10 @@ and extends it to use FastLED engine instead of adafruit's neopixel library.
 # Other Awesome Neopixel projects
 1) [https://github.com/longears/pixelslinger](https://github.com/longears/pixelslinger)
 2) [https://www.bhencke.com/pixelblaze](https://www.bhencke.com/pixelblaze)
+
+# Version v1.0
+---------------------------------
+1) Initial code release
+2) Added FastLED as the RGB engine. OPC client can control the RGS LED on strips/rings/matrixes
+3) Added Arduino OTA capability to ensure OTA firmware upgrades.
+4) added Wifi Manager to avoid storing the SSID name and password on the code.
