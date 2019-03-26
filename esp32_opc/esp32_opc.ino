@@ -11,7 +11,6 @@
 #define WIFI_SSID   "XXXX"
 #define WIFI_PASSWD "XXXX"
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(N_PIXELS, PIN, NEO_GRB + NEO_KHZ800);
 WiFiServer server(7890);
 
 // Define the array of leds
