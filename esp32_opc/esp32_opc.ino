@@ -7,12 +7,17 @@
 #include <ESPmDNS.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
+#include <DNSServer.h>
+#include <WebServer.h>
+#include <WiFiManager.h>    
 
 /* Edit this to configure the number of pixels you have, and your SSID and password */
 #define PIN 23       // pin that FastLEDs are connected to
 #define N_PIXELS 60  // number of FastLEDs on your strip
 #define WIFI_SSID   "XXXX"
 #define WIFI_PASSWD "XXXX"
+
+WiFiManager wifiManager;
 
 WiFiServer server(7890);
 
@@ -23,6 +28,7 @@ CRGB leds[N_PIXELS];
 void setup() {
   Serial.begin(115200);
   Serial.println("Booting");
+  wifiManager.autoConnect("ESP32-OPC-SERVER", "AP-PASSWORD");
 
   LEDS.addLeds<WS2812,PIN,GRB>(leds,N_PIXELS);
   LEDS.setBrightness(84);
